@@ -50,6 +50,9 @@ public enum WeekDays {
   private static WeekDays[] vals = values();
     public static WeekDays next(int i)
     {
+      if(i == 6){
+        return vals[0];
+      } else
         return vals[(i+1) % vals.length];
     }
 
