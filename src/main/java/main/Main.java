@@ -18,7 +18,9 @@ public class Main {
         String day = reader.readLine();
 //task1
 
-      System.out.println(WeekDays.valueOf(day.toUpperCase()).getDay());
+//      System.out.println(WeekDays.valueOf(day.toUpperCase()).getDay());
+
+        System.out.println(WeekDays.next(WeekDays.valueOf(day.toUpperCase()).ordinal()));
 
 //task2
 

@@ -2,7 +2,7 @@ package enums;
 
 public enum WeekDays {
 
-    MONDAY {
+  /*  MONDAY {
 
         public String getDay() {
             return "TUESDAY";
@@ -38,6 +38,20 @@ public enum WeekDays {
             return "MONDAY";
         }
     };
+*/
+  MONDAY,
+    TUESDAY,
+    WEDNESDAY,
+    THURSDAY,
+    FRIDAY,
+    SATURDAY,
+    SUNDAY;
 
-    public abstract String getDay();
+  private static WeekDays[] vals = values();
+    public static WeekDays next(int i)
+    {
+        return vals[(i+1) % vals.length];
+    }
+
+//    public abstract String getDay();
 }
