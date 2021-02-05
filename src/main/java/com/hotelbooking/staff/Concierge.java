@@ -4,14 +4,17 @@ import com.hotelbooking.worker.worker;
 
 public class Concierge extends worker {
 
+    private int hours;
+
     @Override
     public void setSelery(int payment) {
         super.setSelery(payment);
     }
 
     @Override
-    public void setJob(String job) {
-        super.setJob(job);
+    public void setWorkingHours(int hours) {
+        this.hours = hours;
+        System.out.println("He works for " + hours + "hours");
     }
     @Override
     public void doJob() {
