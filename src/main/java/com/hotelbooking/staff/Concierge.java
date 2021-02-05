@@ -4,7 +4,11 @@ import com.hotelbooking.worker.worker;
 
 public class Concierge extends worker {
 
+<<<<<<< HEAD
     private int hours;
+=======
+    private String hours;
+>>>>>>> main
 
     @Override
     public void setSelery(int payment) {
@@ -12,9 +16,15 @@ public class Concierge extends worker {
     }
 
     @Override
+<<<<<<< HEAD
     public void setWorkingHours(int hours) {
         this.hours = hours;
         System.out.println("He works for " + hours + "hours");
+=======
+    public void setWorkingHours(String hours) {
+        this.hours = hours;
+        System.out.println("Hi for work " + hours + "hours");
+>>>>>>> main
     }
     @Override
     public void doJob() {

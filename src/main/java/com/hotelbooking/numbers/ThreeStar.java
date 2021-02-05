@@ -3,7 +3,11 @@ package com.hotelbooking.numbers;
 public class ThreeStar extends com.hotelbooking.room.room {
 
     @Override
+<<<<<<< HEAD
     public void clientsCheckedIn() {
+=======
+    public void clientsCheckIn() {
+>>>>>>> main
 
     }
     private String room;
